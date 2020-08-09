@@ -14,10 +14,10 @@ fi
 set -e
 
 # Required!
-export DEVICE=beryllium
-export DEVICE_COMMON=sdm845-common
+export DEVICE=lmi
+export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2018
+export DEVICE_BRINGUP_YEAR=2020
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

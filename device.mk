@@ -7,7 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/sm8250/sm8250-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2246

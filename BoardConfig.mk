@@ -5,12 +5,12 @@
 #
 
 # Inherit from sdm845-common
--include device/xiaomi/sdm845-common/BoardConfigCommon.mk
+-include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/beryllium
+DEVICE_PATH := device/xiaomi/lmi
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := beryllium
+TARGET_OTA_ASSERT_DEVICE := lmi
 
 # Audio
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -26,7 +26,7 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := beryllium_defconfig
+TARGET_KERNEL_CONFIG := lmi_defconfig
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -42,4 +42,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
--include vendor/xiaomi/beryllium/BoardConfigVendor.mk
+-include vendor/xiaomi/lmi/BoardConfigVendor.mk
