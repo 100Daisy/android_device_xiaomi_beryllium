@@ -26,7 +26,7 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := lmi_defconfig
+TARGET_KERNEL_CONFIG := lmi_user_defconfig
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -55,4 +55,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
--include vendor/xiaomi/lmi/BoardConfigVendor.mk
+#-include vendor/xiaomi/lmi/BoardConfigVendor.mk

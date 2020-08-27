@@ -7,7 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/sm8250/sm8250-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2246
@@ -37,8 +37,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
-# Inherit from sdm845-common
-$(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
+# Inherit from sm8250-common
+$(call inherit-product, device/xiaomi/sm8250-common/sm8250.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm8250
 
 # GPS
 PRODUCT_COPY_FILES += \
